@@ -15,7 +15,7 @@ userpath is the folder path.
 
 2. tem.txt has two lines
      first line is sequence identity, when searching template pocket.
-	 second line is searched ligand type,~ATP~~ADP~,eg. if not, NULL.
+     second line is searched ligand type,~ATP~~ADP~,eg. if not, NULL.
 
 3. pdb.site is binding residues type and index, every line means every pocket, user can define multiple binding pockets of the protein.
      for example, a protein have two binding pockets, there are two lines.
