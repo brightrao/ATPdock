@@ -365,7 +365,7 @@ def restype(path):
 def searchtm(searchengine):
     print('search template')
     os.chdir(ATPdock + '/PPS-search/java/src')
-    p = subprocess.Popen('java -jar pps-search.jar ' + workpath + ' ' + str(sequence_identity) + ' ' + search_type + ' ' + searchengine, shell=True)
+    p = subprocess.Popen('java submit ' + workpath + ' ' + str(sequence_identity) + ' ' + search_type + ' ' + searchengine, shell=True)
     p.wait()
     print('template is done')
         
