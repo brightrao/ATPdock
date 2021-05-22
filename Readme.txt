@@ -4,13 +4,20 @@ How to prepare ATPdock work environment?(Must be Linux System)
 	    1.1.1 accessing /mgltools_x86_64Linux2_1.5.6/bin, copy 'pythonsh' file to basefile folder.
 	    1.1.2 accessing /mgltools_x86_64Linux2_1.5.6/MGLToolsPckgs/AutoDockTools/Utilities24, copy 'prepare_ligand4.py' and 'prepare_receptor4.py' to basefile folder.
     1.2 install OpenBabel program, which is available http://openbabel.org/wiki/Category:Installation
-2 Download pocket-ligand database(PLDB) from xxxx, compress in ATPdock/PPS-search, obtain ATPdock/PPS-search/database
+2 Creating pocket-ligand database(PLDB)
+    2.1 Download pocket-ligand database(PLDB) from three address, 
+        https://github.com/brightrao/PL-DB1/tree/master, 
+        https://github.com/bright197/PL-DB2, 
+        https://github.com/brightzjut/PL-DB3. 
+    2.2 Creating a new "Database" folder under the path "ATPdock/PPS-search/" and put these files in this folder.
+    2.3 Extracting the total compressed file, merge 10 compressed files about pocket, i.e. poc1 to poc10, into one file and name it "poc".
+    2.4 In ATPdock/PPS-search/database, "database" folder should contain three file, i.e. poc, lig folder and "db_poclig_info_cd99.list" file.
 3 Qualify Linux system has python3 version, and include 'os', 'math', 'numpy', 'random', 'subprocess', 'sys', 'shutil' package. 
   If not, using 'pip3 install xxxx' command install python revelant package.
 ------------------------------------------------------------------------------------
 How to prepare docking file?
 Creating a folder, it contain three file, e.g., pdb.pdb, tem.txt and pdb.site.
-userpath is the folder path.
+#userpath is the absolute path to the docking folder.
 1. pdb.pdb is receptor structure
 
 2. tem.txt has two lines
@@ -30,3 +37,4 @@ How to run ATPdock?
 cd xx/xx/ATPdock
 python3 ATPdock.py userpath 
 ------------------------------------------------------------------------------------
+NOTE: userpath is the absolute path to the docking folder.
