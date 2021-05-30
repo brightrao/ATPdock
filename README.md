@@ -1,5 +1,5 @@
 # ATPdock: 
-A Template-based method for ATP-specific protein-ligand docking.
+A template-based method for ATP-specific protein-ligand docking.
 
 ## Pre-requisite:
     - Python, Java, Perl
