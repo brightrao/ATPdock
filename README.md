@@ -43,10 +43,8 @@ The outputted probability of belonging to the class of DBPs of query sequences c
 
 ## Update History:
 
-- First release 2020-05-23
-- Upload the source code of TargetDBP+ 2020-09-03
-- Update the dataset and model of TargetDBP+ 2020-11-19
+- First release 2021-05-31
 
 ## References
 
-[1] Jun Hu, Liang Rao, Yi-Heng Zhu, Gui-Jun Zhang, and Dong-Jun Yu. TargetDBP+: Enhancing the Performance of Identifying DNA-Binding Proteins via Weightedly Convolutional Features. Journal of Chemical Information and Modeling. sumitted.
+[1] Liang Rao, Ning-Xin Jia, Jun Hu, Dong-Jun Yu, and Gui-Jun Zhang. ATPdock: a template-based method for ATP-specific protein-ligand docking. Bioinformatics. sumitted.
