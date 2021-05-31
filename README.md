@@ -10,32 +10,42 @@ A template-based method for ATP-specific protein-ligand docking.
 
 ## Installation:
 
-*Download this repository at https://github.com/brightrao/ATPdock.git and PL-DB database from 3 network address. Then, uncompress it and run the following command lines on Linux System.
-~~~
-  $ cd ./tools/
-  $ tar zxvf blast-2.2.26.tar.gz
-  $ tar zxvf junh_BlastpgpSSITEOutputPARSER.tar.gz
-  $ tar zxvf psipred321.tar.gz
-  $ cd ..
-  $ java -jar FileUnion.jar ./model/dbs/ ./model/dbs/dbs.mod
-  $ java -jar FileUnion.jar ./model/dbp/ ./model/dbp/targetdbpplus.mod
-~~~
-
-*The file of “Config.properties” should be set as follows:
-~~~
-TARGETDBPPLUS_PRED_MODEL=./model/dbp/targetdbpplus.mod
-DBS_PRED_MODEL=./model/dbs/dbs.mod
-PSIPRED321_FOLDER_DIR=./tools/psipred321
-BLAST_BIN_DIR=./tools/blast-2.2.26
-BLASTPGP_EXE_PATH=./tools/blast-2.2.26/blastpgp
-BLASTPGP_SSITE_OUTPUT_PARSER_DIR=./tools/junh_BlastpgpSSITEOutputPARSER
-
-BLASTPGP_DB_PATH=xx/nr
-SANN_RUNNER_PATH=yy/SANN/sann/bin/sann.sh
-~~~
+*Download this repository at https://github.com/brightrao/ATPdock.git.
+1 Accessing basefile folder, perform bellow opration
+    1.1 install MGLTools program, which is available http://mgltools.scripps.edu/downloads
+	    1.1.1 accessing /mgltools_x86_64Linux2_1.5.6/bin, copy 'pythonsh' file to basefile folder.
+	    1.1.2 accessing /mgltools_x86_64Linux2_1.5.6/MGLToolsPckgs/AutoDockTools/Utilities24, copy 'prepare_ligand4.py' and 'prepare_receptor4.py' to basefile folder.
+    1.2 install Open Babel program, which is available http://openbabel.org/wiki/Category:Installation
+2 Creating pocket-ligand database(PLDB)
+    2.1 Download pocket-ligand database(PLDB) from three address, 
+        https://github.com/brightrao/PL-DB1/tree/master, 
+        https://github.com/bright197/PL-DB2, 
+        https://github.com/brightzjut/PL-DB3. 
+    2.2 Creating a new "Database" folder under the path "ATPdock/PPS-search/" and put these files in this folder.
+    2.3 Extracting the total compressed file, merge 10 compressed files about pocket, i.e. poc1 to poc10, into one file and name it "poc".
+    2.4 In ATPdock/PPS-search/database, "database" folder should contain three file, i.e. poc, lig folder and "db_poclig_info_cd99.list" file.
+3 Qualify Linux system has python3 version, and include 'os', 'math', 'numpy', 'random', 'subprocess', 'sys', 'shutil' package. 
+  If not, using 'pip3 install xxxx' command install python revelant package.
 
 Note that, "xx" should be the absolute path of the downloaed NCBI nr90 database. "yy" should be the absolute path of the installed SANN software.
 
+## Docking files preparation:
+
+Creating a folder, it contain three file, e.g., pdb.pdb, tem.txt and pdb.site.
+#userpath is the absolute path to the docking folder.
+1. pdb.pdb is receptor structure
+
+2. tem.txt has two lines
+     first line is sequence identity, when searching template pocket.
+     second line is searched ligand type,~ATP~~ADP~,eg. if not, NULL.
+
+3. pdb.site is binding residues type and index, every line means every pocket, user can define multiple binding pockets of the protein.
+     for example, a protein have two binding pockets, there are two lines.
+     V10 G38 C39 G40 R61 P89 G90 D91 G92 K93
+     E65 I66 V67 N104 R106
+   
+Note that, because ATPbind depend on several large database(more than 5G disk memory), and it can be using by webserver, ATPdock standalone program has not support ATPbind standalone program. You can access ATPbind server(https://zhanglab.ccmb.med.umich.edu/ATPbind/), obtain ATP binding residues of the receptor, write pdb.site according under fasta.
+     
 ## Run example
 ~~~
   $ java -jar TargetDBP+.jar ./example/
