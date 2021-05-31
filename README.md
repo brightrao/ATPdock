@@ -11,10 +11,15 @@ A template-based method for ATP-specific protein-ligand docking.
 ## Installation:
 
 *Download this repository at https://github.com/brightrao/ATPdock.git.
+
 1 Accessing basefile folder, perform bellow opration
+
     1.1 install MGLTools program, which is available http://mgltools.scripps.edu/downloads
+    
 	    1.1.1 accessing /mgltools_x86_64Linux2_1.5.6/bin, copy 'pythonsh' file to basefile folder.
+	    
 	    1.1.2 accessing /mgltools_x86_64Linux2_1.5.6/MGLToolsPckgs/AutoDockTools/Utilities24, copy 'prepare_ligand4.py' and 'prepare_receptor4.py' to basefile folder.
+	    
     1.2 install Open Babel program, which is available http://openbabel.org/wiki/Category:Installation
 2 Creating pocket-ligand database(PLDB)
     2.1 Download pocket-ligand database(PLDB) from three address, 
