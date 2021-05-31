@@ -2,7 +2,7 @@
 A template-based method for ATP-specific protein-ligand docking.
 
 ## Pre-requisite:
-    - Python, Java
+    - Python3, Java
     - MGLTools software (http://mgltools.scripps.edu/downloads)
     - Open Babel software (http://openbabel.org/wiki/Category:Installation)
     - PL-DB database (https://github.com/brightrao/PL-DB1/tree/master, https://github.com/bright197/PL-DB2, https://github.com/brightzjut/PL-DB3)
@@ -14,11 +14,11 @@ A template-based method for ATP-specific protein-ligand docking.
 
  1. Accessing basefile folder, perform bellow opration.
 
-        1.1 install MGLTools program, which is available http://mgltools.scripps.edu/downloads. 
+        1.1 install MGLTools software, which is available http://mgltools.scripps.edu/downloads. 
           1.1.1 accessing /mgltools_x86_64Linux2_1.5.6/bin, copy 'pythonsh' file to basefile folder.
           1.1.2 accessing /mgltools_x86_64Linux2_1.5.6/MGLToolsPckgs/AutoDockTools/Utilities24, copy 'prepare_ligand4.py' and 'prepare_receptor4.py' to basefile folder.
 
-        1.2 install Open Babel program, which is available http://openbabel.org/wiki/Category:Installation.
+        1.2 install Open Babel software, which is available http://openbabel.org/wiki/Category:Installation.
     
  2. Creating pocket-ligand database(PLDB).
 
