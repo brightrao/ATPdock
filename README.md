@@ -2,7 +2,7 @@
 A template-based method for ATP-specific protein-ligand docking.
 
 ## Pre-requisite:
-    - Python, Java, Perl
+    - Python, Java
     - MGLTools software (http://mgltools.scripps.edu/downloads)
     - Open Babel software (http://openbabel.org/wiki/Category:Installation)
     - PL-DB database (https://github.com/brightrao/PL-DB1/tree/master, https://github.com/bright197/PL-DB2, https://github.com/brightzjut/PL-DB3)
