@@ -34,7 +34,7 @@ A template-based method for ATP-specific protein-ligand docking.
   
 ## Docking files preparation:
 
-Creating a folder, it contain three file, e.g., pdb.pdb, tem.txt and pdb.site.
+Creating a docking folder, it contain three file, e.g., pdb.pdb, tem.txt and pdb.site.
 
     1. pdb.pdb is receptor structure
     2. tem.txt has two lines
@@ -51,7 +51,7 @@ Note that, because ATPbind depend on several large database(more than 5G disk me
 ~~~
   $ python3 ATPdock.py userpath
 ~~~
-Note that, userpath is the absolute path of the docked folder in the previous section.
+Note that, userpath is the absolute path of the docking folder in the previous section.
 The outputted "ATPx" folder, "x" is a number. In the folder, "final.pdb" is the docking result.
 
 ## Update History:
