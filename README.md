@@ -46,17 +46,17 @@ Creating a folder, it contain three file, e.g., pdb.pdb, tem.txt and pdb.site. u
    first line is sequence identity, when searching template pocket.   
    second line is searched ligand type,~ATP~~ADP~,eg. if not, NULL.
 3. pdb.site is binding residues type and index, every line means every pocket, user can define multiple binding pockets of the protein.
-     for example, a protein have two binding pockets, there are two lines.
-     V10 G38 C39 G40 R61 P89 G90 D91 G92 K93
-     E65 I66 V67 N104 R106
+    for example, a protein have two binding pockets, there are two lines.
+    V10 G38 C39 G40 R61 P89 G90 D91 G92 K93
+    E65 I66 V67 N104 R106
    
 Note that, because ATPbind depend on several large database(more than 5G disk memory), and it can be using by webserver, ATPdock standalone program has not support ATPbind standalone program. You can access ATPbind server(https://zhanglab.ccmb.med.umich.edu/ATPbind/), obtain ATP binding residues of the receptor, write pdb.site according under fasta.
      
 ## Run example
 ~~~
-  $ java -jar TargetDBP+.jar ./example/
+  $ python3 ATPdock.py userpath
 ~~~
-The outputted probability of belonging to the class of DBPs of query sequences could be found at "./example/querys.jun_res"
+The outputted "ATPx" folder, "x" is a number. In the folder, "final.pdb" is the docking result.
 
 ## Update History:
 
