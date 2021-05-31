@@ -3,13 +3,14 @@ A template-based method for ATP-specific protein-ligand docking.
 
 ## Pre-requisite:
     - Python, Java, Perl
-    - SANN software (https://github.com/newtonjoo/sann)
-    - NCBI nr90 database (ftp://ftp.ncbi.nlm.nih.gov/blast/db/FASTA/)
-    - Linux system (suggested CentOS 7)
+    - MGLTools software (http://mgltools.scripps.edu/downloads)
+    - Open Babel software (http://openbabel.org/wiki/Category:Installation)
+    - PL-DB database (https://github.com/brightrao/PL-DB1/tree/master, https://github.com/bright197/PL-DB2, https://github.com/brightzjut/PL-DB3)
+    - Linux system
 
 ## Installation:
 
-*Download this repository at https://github.com/jun-csbio/TargetDBPPlus.git or https://codeload.github.com/jun-csbio/TargetDBPPlus/zip/master first. Then, uncompress it and run the following command lines on Linux System.
+*Download this repository at https://github.com/brightrao/ATPdock.git and PL-DB database from 3 network address. Then, uncompress it and run the following command lines on Linux System.
 ~~~
   $ cd ./tools/
   $ tar zxvf blast-2.2.26.tar.gz
