@@ -34,20 +34,20 @@ A template-based method for ATP-specific protein-ligand docking.
   
     2.4 In ATPdock/PPS-search/database, "database" folder should contain three file, i.e. poc, lig folder and "db_poclig_info_cd99.list" file.
     
-3 Qualify Linux system has python3 version, and include 'os', 'math', 'numpy', 'random', 'subprocess', 'sys', 'shutil' package. If not, using 'pip3 install xxxx' command install python revelant package. "xxxx" is name of the package.
+3 Qualify Linux system has python3 version, and include 'os', 'math', 'numpy', 'random', 'subprocess', 'sys', 'shutil' package. If a packege does not exist, using 'pip3 install xxxx' command install python revelant package. "xxxx" is name of the package.
   
 ## Docking files preparation:
 
 Creating a folder, it contain three file, e.g., pdb.pdb, tem.txt and pdb.site. userpath is the absolute path to the docking folder.
 
-1. pdb.pdb is receptor structure
-2. tem.txt has two lines
-   first line is sequence identity, when searching template pocket.   
-   second line is searched ligand type,~ATP~~ADP~,eg. if not, NULL.
-3. pdb.site is binding residues type and index, every line means every pocket, user can define multiple binding pockets of the protein.
-    for example, a protein have two binding pockets, there are two lines.
-    V10 G38 C39 G40 R61 P89 G90 D91 G92 K93
-    E65 I66 V67 N104 R106
+    1. pdb.pdb is receptor structure
+    2. tem.txt has two lines
+     first line is sequence identity, when searching template pocket.   
+     second line is searched ligand type,~ATP~~ADP~,eg. if not, NULL.
+    3. pdb.site is binding residues type and index, every line means every pocket, user can define multiple binding pockets of the protein.
+      for example, a protein have two binding pockets, there are two lines.
+      V10 G38 C39 G40 R61 P89 G90 D91 G92 K93
+      E65 I66 V67 N104 R106
    
 Note that, because ATPbind depend on several large database(more than 5G disk memory), and it can be using by webserver, ATPdock standalone program has not support ATPbind standalone program. You can access ATPbind server(https://zhanglab.ccmb.med.umich.edu/ATPbind/), obtain ATP binding residues of the receptor, write pdb.site according under fasta.
      
