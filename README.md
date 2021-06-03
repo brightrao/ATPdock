@@ -52,7 +52,7 @@ Note that, because ATPbind depend on several large database(more than 5G disk me
   $ python3 ATPdock.py userpath
 ~~~
 Note that, userpath is the absolute path of the docking folder in the previous section.
-The outputted "ATPx" folder, "x" is a number. In the folder, "final.pdb" is the docking result.
+The outputted "ATPx" folder, "x" is a number. In the folder, "final.pdb" is the docking result of ATP.
 
 ## Update History:
 
