@@ -34,12 +34,12 @@ A template-based method for ATP-specific protein-ligand docking.
   
 ## Docking files preparation:
 
-Creating a docking folder, it contain three file, e.g., pdb.pdb, tem.txt and pdb.site.
+Creating a docking folder, it contain three file, i.e., pdb.pdb, tem.txt and pdb.site.
 
-    1. pdb.pdb is receptor structure
+    1. pdb.pdb is receptor structure file.
     2. tem.txt has two lines
-       first line is sequence identity, input a value belongs to [0.3,1], when searching template pocket.   
-       second line is searched ligand type. If only search for template proteins that bind to ATP and ADP, the second line is ~ATP~~ADP~. If all ligand types are allowedt, the second line is NULL.
+       first line is sequence identity cutoff, input a value belongs to [0.3,1], when searching template pocket.   
+       second line is searched ligand type. If only search for template proteins that bind to ATP and ADP, the second line is ~ATP~~ADP~. If all ligand types are allowed, the second line is NULL.
     3. pdb.site is binding residues type and index, every line means every pocket, user can define multiple binding pockets of the protein.
         for example, a protein have two binding pockets, there are two lines.
         V10 G38 C39 G40 R61 P89 G90 D91 G92 K93
