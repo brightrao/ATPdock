@@ -27,10 +27,10 @@ A template-based method for ATP-specific protein-ligand docking.
             https://github.com/bright197/PL-DB2, 
             https://github.com/brightzjut/PL-DB3. 		
         2.2 Creating a new "Database" folder under the path "ATPdock/PPS-search/" and put these files in this folder.
-        2.3 Extracting the total compressed file, merge 10 compressed files about pocket, i.e. poc1 to poc10, into one file and name it "poc".
+        2.3 Extracting all the compressed file, merge 10 compressed files about pocket, i.e. poc1 to poc10, into one file and name it "poc".
         2.4 In ATPdock/PPS-search/database, "database" folder should contain three file, i.e. poc, lig folder and "db_poclig_info_cd99.list" file.
     
- 3. Qualify Linux system has python3 version, and include 'os', 'math', 'numpy', 'random', 'subprocess', 'sys', 'shutil' package. If a packege does not exist, using 'pip3 install xxxx' command install python revelant package. "xxxx" is name of the package.
+ 3. Qualify Linux system has python3 version, and include 'os', 'math', 'numpy', 'random', 'subprocess', 'sys', 'shutil' package. If a packege does not exist, using 'pip3 install xxxx' command install python revelant package. "xxxx" is the name of the package.
   
 ## Docking files preparation:
 
