@@ -51,7 +51,7 @@ Note that, because ATPbind depend on several large database(more than 5G disk me
 ~~~
   $ python3 ATPdock.py yy/example
 ~~~
-Note that, "yy" should be the absolute path of example.
+Note that, "yy" should be the absolute path of the example folder.
 The outputted "ATPx" folder, "x" is a number. In the folder, "final.pdb" is the docking result of ATP.
 
 ## Update History:
