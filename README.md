@@ -34,7 +34,7 @@ A template-based method for ATP-specific protein-ligand docking.
   
 ## Docking files preparation:
 
-Creating a docking folder(e.g., example folder), it contain three file, i.e., pdb.pdb, tem.txt and pdb.site.
+Creating a docking folder (e.g., example folder), it contain three file, i.e., pdb.pdb, tem.txt and pdb.site.
 
     1. pdb.pdb is receptor structure file.
     2. tem.txt has two lines
